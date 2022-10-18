@@ -30,7 +30,7 @@ Lexic:
 	c. Character -rule:
 		<char> ::= '<letter>'|'<digit>'
 	d. String - rule:
-		<string> ::= '''<char>'''|<string>'''<char>'''
+		<string> ::= '''<char>''' | '''<char>'''<string>
 	e. Constant - rule:
 		<const> ::= <number_const> | <string_const>
 		<number_const> ::= <int> 
