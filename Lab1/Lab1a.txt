@@ -109,5 +109,3 @@ if (prime == 1){
 else{
    print(The number is not prime''') - missing starting quotes
 }
-
-
