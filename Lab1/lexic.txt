@@ -35,6 +35,6 @@ Lexic:
 		<const> ::= <number_const> | <string_const>
 		<number_const> ::= <int> 
 		<string_const> ::= <char> | <string>
-	f. Number - rule:
-		<number> ::= <int>
+	/*f. Number - rule:
+		<number> ::= <int>*/
 
