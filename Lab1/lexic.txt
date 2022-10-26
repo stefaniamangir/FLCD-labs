@@ -8,7 +8,7 @@ d. Decimal digits [0-9]
 Lexic:
 
 1. Special symbols, representing:
-	a. operators: + - * / = == < <= >= % // != and or
+	a. operators: + - * / = == < <= >= % // ! != and or
 	b. separators: {} [] () ' " . , : ; space newline
 	c. reserved words: if else for while const number string arr input print 
 
