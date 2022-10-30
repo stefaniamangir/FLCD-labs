@@ -7,8 +7,6 @@ Tokens:
 }
 :
 ;
-space
-newline
 .
 ,
 '
