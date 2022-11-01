@@ -52,7 +52,7 @@ public class LexicalAnalyzer {
     }
 
     private boolean isStringConst(String token){
-        String regex = "^(\'{3}.*\'{3})$";
+        String regex = "^(\'{3}.+\'{3})$";
         return token.matches(regex);
     }
 
