@@ -9,10 +9,10 @@ input(z)
 
 number min = x 
 
-if (y < min){
+if (y < min) {
    min = y
 };	
-if (z < min){
+if (z < min) {
    min = z
 };
 print(min)
@@ -26,8 +26,8 @@ input(x)
 number y
 input(y)
 
-while (x != y){
-   if (x > y){
+while (x != y) {
+   if (x > y) {
       x = x-y
    };
    else {
@@ -43,24 +43,24 @@ number x
 input(x)
 
 number prime = 1
-if (x<2){
+if (x<2) {
     prime = 0
 };
-if (x==2){
+if (x==2) {
     prime = 1
 };
-if (x%2==0){
+if (x%2==0) {
     prime = 0
 };
 number i
 for ( i = 2, i < x//2, i = i+1):
-    if (x%i==0){
+    if (x%i==0) {
 	prime = 0
     };
-if (prime == 1){
+if (prime == 1) {
    print('''The number is prime''')	
 }; 
-else{
+else {
    print('''The number is not prime''')
 };
 
@@ -89,23 +89,23 @@ p1err: verify if a number is prime
 number 55x  - identifier cannot start with a number 
 input(55x)
 number prime = 1
-if (x<2){
+if (x<2) {
     prime = 0
-}
-if (x==2){
+};
+if (x==2) {
     prime = 1
-}
-if (x%2==0){
+};
+if (x%2==0) {
     prime = 0
-}
+};
 number i 
 for (i = 2, i < x//2, i = i+1):
-    if (x%i==0){
+    if (x%i==0) {
 	prime = 0
-    }
-if (prime == 1){
+    };
+if (prime == 1) {
    print('''The number is prime''')	
-} 
-else{
+}; 
+else {
    print(The number is not prime''') - missing starting quotes
-}
+};
