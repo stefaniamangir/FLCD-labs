@@ -10,12 +10,11 @@ Tokens:
 .
 ,
 '
-"
 '''
 +
 -
 *
-/
+//
 =
 <
 >
@@ -27,7 +26,6 @@ Tokens:
 and
 or
 arr
-const
 number
 string
 if
