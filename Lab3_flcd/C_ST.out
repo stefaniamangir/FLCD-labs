@@ -1,0 +1,7 @@
+Symbol Table:
+
+Position: 0  -->  Symbol: 2
+Position: 1  -->  Symbol: '''The number is prime'''
+Position: 2  -->  Symbol: '''The number is not prime'''
+Position: 8  -->  Symbol: 0
+Position: 9  -->  Symbol: 1

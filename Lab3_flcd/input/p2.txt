@@ -1,0 +1,24 @@
+number x
+input(x)
+
+number prime = 1
+if (x<2) {
+    prime = 0
+};
+if (x==2) {
+    prime = 1
+};
+if (x%2==0) {
+    prime = 0
+};
+number i
+for ( i = 2, i < x//2, i = i+1):
+    if (x%i==0) {
+	    prime = 0
+    };
+if (prime == 1) {
+   print('''The number is prime''')	
+};
+else {
+   print('''The number is not prime''')
+};
