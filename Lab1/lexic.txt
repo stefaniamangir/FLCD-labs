@@ -10,7 +10,7 @@ Lexic:
 1. Special symbols, representing:
 	a. operators: + - * / = == < > <= >= % // ! != and or
 	b. separators: {} [] () ' " . , : ; space newline
-	c. reserved words: if else for while const number string arr input print 
+	c. reserved words: if else for while number string arr input print 
 
 2. Identifiers - a sequence of letters, digits and underline characters, such that the first character is a letter:
 
@@ -35,6 +35,4 @@ Lexic:
 		<const> ::= <number_const> | <string_const>
 		<number_const> ::= <int> 
 		<string_const> ::= <char> | <string>
-	/*f. Number - rule:
-		<number> ::= <int>*/
 
