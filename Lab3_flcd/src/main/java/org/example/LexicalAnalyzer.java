@@ -131,11 +131,11 @@ public class LexicalAnalyzer {
             return true;
         } else if (isIdentifier(token)) {
             int index = identifiersSymbolTable.addElement(token);
-            addToPIF(token, index);
+            addToPIF("id", index);
             return true;
         } else if (isConstant(token)) {
             int index = constantsSymbolTable.addElement(token);
-            addToPIF(token, index);
+            addToPIF("const", index);
             return true;
         }
         return false;
