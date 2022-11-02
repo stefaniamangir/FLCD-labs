@@ -38,7 +38,7 @@ public class SymbolTable {
 
     }
 
-    public Integer getPosition(String key){
+    public int getPosition(String key){
         int hash = hash(key);
         while(hashTable[hash] != null) {
             if(hashTable[hash].equals(key)){
@@ -49,7 +49,7 @@ public class SymbolTable {
         return -1;
     }
 
-    public void remove(Integer pos){
+    public void remove(int pos){
         String[] copy = new String[size];
         for(int i = 0; i < size; i++){
             if(hashTable[i] != null)
