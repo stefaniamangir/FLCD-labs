@@ -1,0 +1,15 @@
+number x
+input(x)
+number y
+input(y)
+number z
+input(z)
+number min = x
+if (y <= min){
+   min = y
+};
+if (z < min)
+{
+   min = z
+};
+print(min)
