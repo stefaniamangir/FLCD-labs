@@ -1,0 +1,9 @@
+N = V,A,B,C,D
+E= a + * ( )
+S= V
+V -> B A
+A -> + B A|epsilon
+B -> D C
+C -> * D C|epsilon
+D -> ( V )|a
+
