@@ -1,0 +1,26 @@
+
+ lex specif.l - translates a set of regular expression specifications into a C implementation of a corresponding finite state machine (lex.yy.c)
+
+ gcc lex.yy.c -ll   - This C program, when compiled, yields an executable lexical analyzer
+
+ ./a.out<p1.txt     - analyse the input 
+
+
+lex specification.lxi
+ yacc -d lang.y
+ gcc lex.yy.c -o y.tab.c -o result -ll
+ ./result<p1.txt
+
+
+[\n]+ {current_line++;}          /* eat up whitespace */\
+[ \t]+  {}.   
+
+yyin - yyin is a variable of the type FILE* and points to the input file. yyin is defined by LEX automatically -> assigns yyin to stdin(console input)
+
+yytext - is of type char* and it contains the lexeme currently found. A lexeme is a sequence of characters in the input stream that matches some pattern in the Rules Section.
+
+yylex() is a function of return type int. LEX automatically defines yylex() in lex.yy.c but does not call it. The programmer must call yylex() in the Auxiliary functions section of the LEX program. LEX generates code for the definition of yylex() according to the rules specified in the Rules section.
+
+The %option noyywrap is used to inform the compiler that the function yywrap() has not been defined.
+As LEX does not define yywrap() in lex.yy.c file but makes a call to it under yylex(), the programmer must define it in the Auxiliary functions section or provide %option noyywrap in the declarations section. This options removes the call to yywrap() in the lex.yy.c file.
+
